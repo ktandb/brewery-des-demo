@@ -775,6 +775,7 @@ write_comparison <- function() {
   fs <- fs[!grepl("-replications\\.csv$", fs)]
   if (!length(fs)) return(invisible())
   d <- do.call(rbind, lapply(fs, read.csv, stringsAsFactors = FALSE))
+  d$overrides[is.na(d$overrides)] <- ""
   d$is_base <- d$scenario == "Baseline"
   d <- d[order(!d$is_base, d$scenario), ]
   base <- d[d$is_base, ]
