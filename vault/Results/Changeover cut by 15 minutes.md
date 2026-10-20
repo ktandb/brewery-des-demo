@@ -1,10 +1,10 @@
 ---
 type: result
 scenario: "[[Changeover cut by 15 minutes]]"
-generated: 2026-10-20 13:25
+generated: 2026-10-20 13:27
 replications: 40
 simulated: 52 weeks after a warm-up
-runtime_seconds: 2.5
+runtime_seconds: 2.8
 service_level: 0.8735
 bottleneck: "Fermenters"
 ---
@@ -63,4 +63,4 @@ Share of each station's *available* time (on shift, all units) that it was occup
 
 The bottleneck is the station with the highest *active* utilisation. The packaging line (filler, labeller and packer, palletiser) runs as one unit, so the three machines show nearly the same figure; the filler paces it. Wait at Bright tanks is the time beer sat in a full fermenter waiting for a bright tank; wait at the filler is the time beer sat in a bright tank waiting for the line.
 
-Runtime: 2.5 s for 40 replications. Raw numbers: `Results/data/changeover-cut-by-15-minutes.csv` and `changeover-cut-by-15-minutes-replications.csv`.
+Runtime: 2.8 s for 40 replications. Raw numbers: `Results/data/changeover-cut-by-15-minutes.csv` and `changeover-cut-by-15-minutes-replications.csv`.

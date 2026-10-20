@@ -1,7 +1,7 @@
 ---
 type: result
 scenario: "[[Saturday packaging shift]]"
-generated: 2026-10-20 13:25
+generated: 2026-10-20 13:27
 replications: 40
 simulated: 52 weeks after a warm-up
 runtime_seconds: 2.5
