@@ -1,0 +1,28 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {"query": "path:Stations", "color": {"a": 1, "rgb": 2783446}},
+    {"query": "path:Rules", "color": {"a": 1, "rgb": 15427636}},
+    {"query": "path:Scenarios", "color": {"a": 1, "rgb": 1814394}},
+    {"query": "path:Results", "color": {"a": 1, "rgb": 4864679}},
+    {"query": "path:Questions", "color": {"a": 1, "rgb": 15573248}}
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.2,
+  "lineSizeMultiplier": 1.5,
+  "collapse-forces": true,
+  "centerStrength": 0.5,
+  "repelStrength": 12,
+  "linkStrength": 1,
+  "linkDistance": 120,
+  "scale": 1,
+  "close": false
+}

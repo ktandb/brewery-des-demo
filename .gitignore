@@ -1,0 +1,10 @@
+# Obsidian app state (per-device; changes every time the vault is opened)
+vault/.obsidian/workspace.json
+vault/.obsidian/workspace-mobile.json
+vault/.obsidian/cache
+vault/.trash/
+# OS / R clutter
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
