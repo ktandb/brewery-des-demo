@@ -779,9 +779,17 @@ write_comparison <- function() {
   d$is_base <- d$scenario == "Baseline"
   d <- d[order(!d$is_base, d$scenario), ]
   base <- d[d$is_base, ]
-  delta <- function(x, b) if (nrow(base)) sprintf("%+.1f pts", 100 * (x - b)) else ""
+  # paired difference vs Baseline: replication r of each scenario uses the same seed as replication r of Baseline
+  reps_of <- function(nm) { f <- file.path(DATA, paste0(slug(nm), "-replications.csv")); if (file.exists(f)) read.csv(f)$service else NULL }
+  b_rep <- if (nrow(base)) reps_of("Baseline") else NULL
+  delta_of <- function(nm) {
+    x <- reps_of(nm)
+    if (is.null(b_rep) || is.null(x) || length(x) != length(b_rep)) return("")
+    v <- ci(x - b_rep)
+    sprintf("%+.1f pts (%+.1f to %+.1f)", 100 * v[1], 100 * v[2], 100 * v[3])
+  }
   rows <- paste0("| [[", d$scenario, "]] | ", ifelse(d$overrides == "", "none", gsub("\\|", "/", d$overrides)), " | **", pct(d$service, 1), "** (", pct(d$service_lo, 1), " to ", pct(d$service_hi, 1), ") | ",
-                 if (nrow(base)) ifelse(d$is_base, "", sapply(d$service, delta, b = base$service)) else "", " | ",
+                 ifelse(d$is_base, "", vapply(d$scenario, delta_of, "")), " | ",
                  fmt_n(d$packaged_hl), " | ", fmt_n(d$backlog_end_hl), " | ", pct(d$fv_active), " | ", pct(d$filler_occ), " | ", pct(d$tanks_full), " | ",
                  d$bottleneck, " | ", sprintf("%.0f", d$runtime_s), " |")
   d$scenario_f <- factor(d$scenario, rev(d$scenario))
@@ -794,10 +802,10 @@ write_comparison <- function() {
   md <- c("---", "type: result", "scenario: comparison", sprintf("generated: %s", format(Sys.time(), "%Y-%m-%d %H:%M")), "---",
           "# Comparison of scenarios", "",
           "*Written by `R/run.R --compare`; do not edit by hand. Synthetic plant.*", "",
-          "| Scenario | Changes | Service level (95% interval) | vs Baseline | Packaged hL/yr | Back orders at year end (hL) | Fermenters active | Filler occupied | Plan blocked by full tanks | Bottleneck | Runtime (s) |",
+          "| Scenario | Changes | Service level (95% interval) | vs Baseline (paired 95% interval) | Packaged hL/yr | Back orders at year end (hL) | Fermenters active | Filler occupied | Plan blocked by full tanks | Bottleneck | Runtime (s) |",
           "|---|---|---|---|---|---|---|---|---|---|---|", rows, "",
           "![Service level by scenario](img/comparison-service.png)", "",
-          "Each scenario runs the same random-number seeds per replication (common random numbers), so differences between scenarios are less noisy than the intervals suggest.")
+          "Replication *r* of every scenario starts from the same random seed as replication *r* of the Baseline (common random numbers), so the change versus Baseline is measured pair by pair. Its interval is much narrower than the two scenarios' own intervals; a change whose paired interval spans zero is not distinguishable from noise.")
   writeLines(md, file.path(RES, "Comparison.md"))
 }
 
