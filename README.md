@@ -115,3 +115,9 @@ The synthetic plant is tank-limited: more fermenters help most, and once added, 
 | 30-38 | **Comparison**: tanks beat fillers here; why packaging still helps a little (timing); the bottleneck moving after the fix. Invite a question from the room and run it (e.g. "two more fermenters and a Saturday shift"). | `Results/Comparison` |
 | 38-43 | **`git log`** as the record of decisions: skeleton, stations, rules, model, calibration, baseline tag, one commit per scenario. `git diff baseline -- vault/Scenarios` shows exactly what each what-if changed. | terminal |
 | 43-45 | Where this goes for a real plant: the notes are the specification, owned by the people who know the plant. | |
+
+## Plant canvases (added 20 Oct 2026)
+
+Every run also writes `vault/Canvas/<Scenario>.canvas` and `vault/Canvas/Comparison.canvas` (Obsidian Canvas, the open JSON Canvas format), via `R/canvas.R`. Each station is a card linked to its note and coloured by active utilisation (green under 50%, amber 50–75%, orange 75–90%, red 90% and over), with the bottleneck marked ▲ and arrows following the `next:` links. The comparison canvas puts every scenario on one board, one row each, so the bottleneck can be seen moving (Fermenters in the baseline; the filler once two fermenters are added).
+
+Card positions are yours: drag them in Obsidian and the next run keeps them, snapped to a 20 px grid so a nudge doesn't make a noisy diff. Delete a canvas to get the default layout back. Station figures come from `Results/data/<scenario>-stations.csv`.

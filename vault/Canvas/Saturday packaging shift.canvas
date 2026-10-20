@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 100,
+      "text": "## Saturday packaging shift\nService level **90.1%** (95% interval 88.4–91.8) · bottleneck **Fermenters** · [[Results/Saturday packaging shift|full results]]"
+    },
+    {
+      "id": "brewhouse",
+      "type": "text",
+      "x": 0,
+      "y": 140,
+      "width": 260,
+      "height": 150,
+      "color": "#d9a43a",
+      "text": "**[[Brewhouse]]**\nActive: **68%**\nMean wait: 5.9 h"
+    },
+    {
+      "id": "fermenters",
+      "type": "text",
+      "x": 340,
+      "y": 140,
+      "width": 260,
+      "height": 150,
+      "color": "#c0352a",
+      "text": "**[[Fermenters]]**\nActive: **91%**\n\n**▲ Bottleneck**"
+    },
+    {
+      "id": "bright-tanks",
+      "type": "text",
+      "x": 680,
+      "y": 140,
+      "width": 260,
+      "height": 150,
+      "color": "#3a9a5b",
+      "text": "**[[Bright tanks]]**\nActive: **34%**\nBlocked (full, waiting): 10%\nMean wait: 0.2 h"
+    },
+    {
+      "id": "filler",
+      "type": "text",
+      "x": 1020,
+      "y": 140,
+      "width": 260,
+      "height": 150,
+      "color": "#d9a43a",
+      "text": "**[[Filler]]**\nActive: **71%**\nMean wait: 15.3 h"
+    },
+    {
+      "id": "labeller-and-packer",
+      "type": "text",
+      "x": 1020,
+      "y": 400,
+      "width": 260,
+      "height": 150,
+      "color": "#d9a43a",
+      "text": "**[[Labeller and packer]]**\nActive: **71%**"
+    },
+    {
+      "id": "palletiser",
+      "type": "text",
+      "x": 680,
+      "y": 400,
+      "width": 260,
+      "height": 150,
+      "color": "#d9a43a",
+      "text": "**[[Palletiser]]**\nActive: **71%**"
+    },
+    {
+      "id": "warehouse",
+      "type": "text",
+      "x": 340,
+      "y": 400,
+      "width": 260,
+      "height": 150,
+      "color": "#3a9a5b",
+      "text": "**[[Warehouse]]**\nActive: **18%**"
+    },
+    {
+      "id": "dispatch",
+      "type": "text",
+      "x": 0,
+      "y": 400,
+      "width": 260,
+      "height": 150,
+      "color": "#3a9a5b",
+      "text": "**[[Dispatch]]**\nActive: **11%**"
+    },
+    {
+      "id": "key",
+      "type": "text",
+      "x": 0,
+      "y": 660,
+      "width": 1280,
+      "height": 80,
+      "text": "Colour = active utilisation: green under 50% · amber 50–75% · orange 75–90% · red 90% and over. Drag cards to rearrange; positions are kept on the next run."
+    }
+  ],
+  "edges": [
+    {
+      "id": "brewhouse--fermenters",
+      "fromNode": "brewhouse",
+      "toNode": "fermenters",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "fermenters--bright-tanks",
+      "fromNode": "fermenters",
+      "toNode": "bright-tanks",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "bright-tanks--filler",
+      "fromNode": "bright-tanks",
+      "toNode": "filler",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "filler--labeller-and-packer",
+      "fromNode": "filler",
+      "toNode": "labeller-and-packer",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "labeller-and-packer--palletiser",
+      "fromNode": "labeller-and-packer",
+      "toNode": "palletiser",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "palletiser--warehouse",
+      "fromNode": "palletiser",
+      "toNode": "warehouse",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "warehouse--dispatch",
+      "fromNode": "warehouse",
+      "toNode": "dispatch",
+      "toEnd": "arrow"
+    }
+  ]
+}

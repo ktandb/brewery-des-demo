@@ -51,3 +51,5 @@ Begin at [[Brewhouse]].
 ## Ask a question
 
 Copy `Templates/Ask a question` into `Questions/`, write the question in plain words, and ask the agent (Claude Code, run from the repo folder) to "answer the open questions". It turns the question into one or more scenario notes, runs them, and writes the answer back into your question note with links to the results. Every step is a git commit, so the history shows what was asked and what was changed.
+
+**See the plant.** Open [[Canvas/Baseline.canvas|the Baseline canvas]]: each station coloured by how busy it is, the bottleneck marked ▲. [[Canvas/Comparison.canvas|The comparison canvas]] shows every scenario side by side.

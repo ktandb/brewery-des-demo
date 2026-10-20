@@ -1,7 +1,7 @@
 ---
 type: result
 scenario: "[[Changeover cut by 15 minutes]]"
-generated: 2026-10-20 13:27
+generated: 2026-10-20 13:32
 replications: 40
 simulated: 52 weeks after a warm-up
 runtime_seconds: 2.8

@@ -1,0 +1,450 @@
+{
+  "nodes": [
+    {
+      "id": "g-baseline",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 1380,
+      "height": 130,
+      "label": "Baseline: service 87.6%"
+    },
+    {
+      "id": "baseline-brewhouse",
+      "type": "text",
+      "x": 10,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Brewhouse\n**68%**"
+    },
+    {
+      "id": "baseline-fermenters",
+      "type": "text",
+      "x": 180,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#c0352a",
+      "text": "Fermenters\n**91%** ▲"
+    },
+    {
+      "id": "baseline-bright-tanks",
+      "type": "text",
+      "x": 350,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Bright tanks\n**36%**"
+    },
+    {
+      "id": "baseline-filler",
+      "type": "text",
+      "x": 520,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Filler\n**86%**"
+    },
+    {
+      "id": "baseline-labeller-and-packer",
+      "type": "text",
+      "x": 690,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Labeller and packer\n**86%**"
+    },
+    {
+      "id": "baseline-palletiser",
+      "type": "text",
+      "x": 860,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Palletiser\n**86%**"
+    },
+    {
+      "id": "baseline-warehouse",
+      "type": "text",
+      "x": 1030,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Warehouse\n**15%**"
+    },
+    {
+      "id": "baseline-dispatch",
+      "type": "text",
+      "x": 1200,
+      "y": 40,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Dispatch\n**11%**"
+    },
+    {
+      "id": "g-two-more-fermenters",
+      "type": "group",
+      "x": 0,
+      "y": 170,
+      "width": 1380,
+      "height": 130,
+      "label": "Two more fermenters: service 94.6%"
+    },
+    {
+      "id": "two-more-fermenters-brewhouse",
+      "type": "text",
+      "x": 10,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Brewhouse\n**68%**"
+    },
+    {
+      "id": "two-more-fermenters-fermenters",
+      "type": "text",
+      "x": 180,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Fermenters\n**83%**"
+    },
+    {
+      "id": "two-more-fermenters-bright-tanks",
+      "type": "text",
+      "x": 350,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Bright tanks\n**37%**"
+    },
+    {
+      "id": "two-more-fermenters-filler",
+      "type": "text",
+      "x": 520,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Filler\n**86%** ▲"
+    },
+    {
+      "id": "two-more-fermenters-labeller-and-packer",
+      "type": "text",
+      "x": 690,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Labeller and packer\n**86%**"
+    },
+    {
+      "id": "two-more-fermenters-palletiser",
+      "type": "text",
+      "x": 860,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Palletiser\n**86%**"
+    },
+    {
+      "id": "two-more-fermenters-warehouse",
+      "type": "text",
+      "x": 1030,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Warehouse\n**19%**"
+    },
+    {
+      "id": "two-more-fermenters-dispatch",
+      "type": "text",
+      "x": 1200,
+      "y": 210,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Dispatch\n**11%**"
+    },
+    {
+      "id": "g-second-filler",
+      "type": "group",
+      "x": 0,
+      "y": 340,
+      "width": 1380,
+      "height": 130,
+      "label": "Second filler: service 90.5%"
+    },
+    {
+      "id": "second-filler-brewhouse",
+      "type": "text",
+      "x": 10,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Brewhouse\n**68%**"
+    },
+    {
+      "id": "second-filler-fermenters",
+      "type": "text",
+      "x": 180,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#c0352a",
+      "text": "Fermenters\n**92%** ▲"
+    },
+    {
+      "id": "second-filler-bright-tanks",
+      "type": "text",
+      "x": 350,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Bright tanks\n**34%**"
+    },
+    {
+      "id": "second-filler-filler",
+      "type": "text",
+      "x": 520,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Filler\n**44%**"
+    },
+    {
+      "id": "second-filler-labeller-and-packer",
+      "type": "text",
+      "x": 690,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Labeller and packer\n**43%**"
+    },
+    {
+      "id": "second-filler-palletiser",
+      "type": "text",
+      "x": 860,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Palletiser\n**43%**"
+    },
+    {
+      "id": "second-filler-warehouse",
+      "type": "text",
+      "x": 1030,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Warehouse\n**16%**"
+    },
+    {
+      "id": "second-filler-dispatch",
+      "type": "text",
+      "x": 1200,
+      "y": 380,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Dispatch\n**11%**"
+    },
+    {
+      "id": "g-saturday-packaging-shift",
+      "type": "group",
+      "x": 0,
+      "y": 510,
+      "width": 1380,
+      "height": 130,
+      "label": "Saturday packaging shift: service 90.1%"
+    },
+    {
+      "id": "saturday-packaging-shift-brewhouse",
+      "type": "text",
+      "x": 10,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Brewhouse\n**68%**"
+    },
+    {
+      "id": "saturday-packaging-shift-fermenters",
+      "type": "text",
+      "x": 180,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#c0352a",
+      "text": "Fermenters\n**91%** ▲"
+    },
+    {
+      "id": "saturday-packaging-shift-bright-tanks",
+      "type": "text",
+      "x": 350,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Bright tanks\n**34%**"
+    },
+    {
+      "id": "saturday-packaging-shift-filler",
+      "type": "text",
+      "x": 520,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Filler\n**71%**"
+    },
+    {
+      "id": "saturday-packaging-shift-labeller-and-packer",
+      "type": "text",
+      "x": 690,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Labeller and packer\n**71%**"
+    },
+    {
+      "id": "saturday-packaging-shift-palletiser",
+      "type": "text",
+      "x": 860,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Palletiser\n**71%**"
+    },
+    {
+      "id": "saturday-packaging-shift-warehouse",
+      "type": "text",
+      "x": 1030,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Warehouse\n**18%**"
+    },
+    {
+      "id": "saturday-packaging-shift-dispatch",
+      "type": "text",
+      "x": 1200,
+      "y": 550,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Dispatch\n**11%**"
+    },
+    {
+      "id": "g-changeover-cut-by-15-minutes",
+      "type": "group",
+      "x": 0,
+      "y": 680,
+      "width": 1380,
+      "height": 130,
+      "label": "Changeover cut by 15 minutes: service 87.3%"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-brewhouse",
+      "type": "text",
+      "x": 10,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#d9a43a",
+      "text": "Brewhouse\n**68%**"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-fermenters",
+      "type": "text",
+      "x": 180,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#c0352a",
+      "text": "Fermenters\n**91%** ▲"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-bright-tanks",
+      "type": "text",
+      "x": 350,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Bright tanks\n**36%**"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-filler",
+      "type": "text",
+      "x": 520,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Filler\n**84%**"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-labeller-and-packer",
+      "type": "text",
+      "x": 690,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Labeller and packer\n**84%**"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-palletiser",
+      "type": "text",
+      "x": 860,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#e07b39",
+      "text": "Palletiser\n**84%**"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-warehouse",
+      "type": "text",
+      "x": 1030,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Warehouse\n**15%**"
+    },
+    {
+      "id": "changeover-cut-by-15-minutes-dispatch",
+      "type": "text",
+      "x": 1200,
+      "y": 720,
+      "width": 150,
+      "height": 70,
+      "color": "#3a9a5b",
+      "text": "Dispatch\n**11%**"
+    }
+  ],
+  "edges": []
+}

@@ -1,10 +1,10 @@
 ---
 type: result
 scenario: "[[Saturday packaging shift]]"
-generated: 2026-10-20 13:27
+generated: 2026-10-20 13:32
 replications: 40
 simulated: 52 weeks after a warm-up
-runtime_seconds: 2.5
+runtime_seconds: 2.6
 service_level: 0.9010
 bottleneck: "Fermenters"
 ---
@@ -62,4 +62,4 @@ Share of each station's *available* time (on shift, all units) that it was occup
 
 The bottleneck is the station with the highest *active* utilisation. The packaging line (filler, labeller and packer, palletiser) runs as one unit, so the three machines show nearly the same figure; the filler paces it. Wait at Bright tanks is the time beer sat in a full fermenter waiting for a bright tank; wait at the filler is the time beer sat in a bright tank waiting for the line.
 
-Runtime: 2.5 s for 40 replications. Raw numbers: `Results/data/saturday-packaging-shift.csv` and `saturday-packaging-shift-replications.csv`.
+Runtime: 2.6 s for 40 replications. Raw numbers: `Results/data/saturday-packaging-shift.csv` and `saturday-packaging-shift-replications.csv`.

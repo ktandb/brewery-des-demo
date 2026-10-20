@@ -1,10 +1,10 @@
 ---
 type: result
 scenario: "[[Second filler]]"
-generated: 2026-10-20 13:27
+generated: 2026-10-20 13:32
 replications: 40
 simulated: 52 weeks after a warm-up
-runtime_seconds: 2.6
+runtime_seconds: 2.8
 service_level: 0.9050
 bottleneck: "Fermenters"
 ---
@@ -64,4 +64,4 @@ Share of each station's *available* time (on shift, all units) that it was occup
 
 The bottleneck is the station with the highest *active* utilisation. The packaging line (filler, labeller and packer, palletiser) runs as one unit, so the three machines show nearly the same figure; the filler paces it. Wait at Bright tanks is the time beer sat in a full fermenter waiting for a bright tank; wait at the filler is the time beer sat in a bright tank waiting for the line.
 
-Runtime: 2.6 s for 40 replications. Raw numbers: `Results/data/second-filler.csv` and `second-filler-replications.csv`.
+Runtime: 2.8 s for 40 replications. Raw numbers: `Results/data/second-filler.csv` and `second-filler-replications.csv`.

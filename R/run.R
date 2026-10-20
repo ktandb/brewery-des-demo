@@ -679,6 +679,7 @@ write_results <- function(scen, P, sums, runtime) {
                             filler_occ = u$occupied[u$station == P$names[["filler"]]], runtime_s = runtime)
   write.csv(summary_row, file.path(DATA, paste0(sl, ".csv")), row.names = FALSE)
   write.csv(kpi, file.path(DATA, paste0(sl, "-replications.csv")), row.names = FALSE)
+  write.csv(u, file.path(DATA, paste0(sl, "-stations.csv")), row.names = FALSE)
 
   # --- charts
   wk <- aggregate(cbind(demand_hl, packaged_hl) ~ cal, data = weekly, FUN = mean)
@@ -772,7 +773,7 @@ write_results <- function(scen, P, sums, runtime) {
 
 write_comparison <- function() {
   fs <- list.files(DATA, pattern = "\\.csv$", full.names = TRUE)
-  fs <- fs[!grepl("-replications\\.csv$", fs)]
+  fs <- fs[!grepl("-(replications|stations)\\.csv$", fs)]
   if (!length(fs)) return(invisible())
   d <- do.call(rbind, lapply(fs, read.csv, stringsAsFactors = FALSE))
   d$overrides[is.na(d$overrides)] <- ""
@@ -855,3 +856,4 @@ for (nm in todo) {
               nm, 100 * row$service, fmt_n(row$packaged_hl), row$bottleneck, runtime, n_reps, cores))
 }
 write_comparison()
+source(file.path(ROOT, "R", "canvas.R"))   # coloured plant canvases in vault/Canvas/
