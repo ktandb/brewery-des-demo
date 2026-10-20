@@ -4,7 +4,7 @@ rule: demand
 applies_to:
   - "[[Dispatch]]"
   - "[[Warehouse]]"
-base_hl_per_week: 5000
+base_hl_per_week: 4500
 seasonality:
   - weeks: "1-4"
     factor: 0.8
@@ -20,14 +20,14 @@ planning:
   initial_stock_weeks: 2
 warmup_weeks: 6
 sources:
-  base_hl_per_week: "illustrative assumption (about 280,000 hL a year, a mid-size lager brewery)"
+  base_hl_per_week: "illustrative assumption (about 255,000 hL a year including the seasonal peaks, a mid-size lager brewery)"
   seasonality: "illustrative assumption; a summer peak and a Christmas bump are the familiar shape of UK beer sales"
   noise_cv: illustrative assumption
   planning: illustrative assumption
 ---
 # Demand
 
-Customers order **pallets** of each product every weekday at 06:00. The week's volume is `base_hl_per_week` times the seasonal factor for that week, with random week-to-week noise (coefficient of variation 15%), split across products by their share (see Products) and spread evenly over the five order days.
+Customers order **pallets** of each product every weekday at 06:00. The week's volume is `base_hl_per_week` (4,500 hL) times the seasonal factor for that week, with random week-to-week noise (coefficient of variation 15%), split across products by their share (see Products) and spread evenly over the five order days.
 
 | Weeks | Factor | Why |
 |---|---|---|
