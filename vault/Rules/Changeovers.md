@@ -13,7 +13,7 @@ product_change:
   unit: min
 sources:
   format_change: illustrative assumption (can <-> bottle on a dual-format line)
-  product_change: illustrative assumption (same container, different beer or pack: flush and label/pack change)
+  product_change: "illustrative assumption (same container, different beer or pack: flush and label/pack change)"
 ---
 # Changeovers
 
